@@ -1,0 +1,63 @@
+/* Default background image */
+
+body {
+    background-image: url('images/realBlack.jpg');
+    background-size: cover;
+    background-repeat:repeat;
+    text-align: center;
+    
+    font-weight: bold;
+    font-size:larger;
+}
+
+/* Media query for mobile phones and tablets */
+@media only screen and (max-width: 1080px) {
+    body {
+        background-image: url('images/ace.jpg');
+        color:rgb(130, 146, 26);
+
+    }
+}
+
+/* Media query for laptops and desktops */
+@media only screen and (min-width: 1081px) {
+    body {
+        background-image: url('images/realBlack.jpg');
+        color:rgb(155, 195, 9);
+    }
+}
+
+h1{
+    color:rgb(231, 198, 11)
+    
+}
+
+#message-el{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+
+#game-starter, #new-card, #refresh{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(231, 198, 11);
+    border-radius: 2px;
+    color:rgb(71, 76, 73);
+    font-weight: bold;
+    border: none;
+    margin: 2px;
+    box-shadow: 7px 6px 28px 1px rgba(6, 222, 6, 0.24); 
+    cursor:pointer; 
+    outline: none; 
+    transition: 0.75s all;
+}
+
+#game-starter:active, #new-card:active, #refresh:active{
+    transform: scale(0.95); 
+            /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+            /* Lowering the shadow */
+}
+
+#game-starter:hover, #new-card:hover, #refresh:hover{
+    background-color: rgb(236, 14, 14);
+}
